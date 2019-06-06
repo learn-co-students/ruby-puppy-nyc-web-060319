@@ -10,7 +10,7 @@ class Dog
         @@all << self
     end
 
-    def self.all
+    def self.all #keeps track of all created dog instances
         @@all
     end
 
@@ -20,7 +20,7 @@ class Dog
 
     def self.all #puts each dog name individually
         @@all.each do |dog|
-            puts dog.name
+            puts dog.name #from each dog obj/instances that exists, run the name method on it to return @name for each dog
         end
     end
 end
